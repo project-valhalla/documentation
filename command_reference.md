@@ -8,7 +8,66 @@
 | avatarfov      | Integer        | 10  | 40      | 100 | Field of view of the first person weapon.
 
 ### Game
-*Coming soon™*
+
+| Variable            | Type               | Min | Default | Max         | Description |
+| --------------------|--------------------|-----|---------|-------------|-------------|
+| aidebug             | Integer            | 0   | 0       | 6           |
+| aiforcegun          | Integer            | -1  | -1      | Max weapons |
+| allycrosshair       | Persistent Integer | 0   | 1       | 1
+| animoverride        | Integer            |-1   | 0       | Max animations
+| autoauth            | Persistent integer | 0   | 1       | 1
+| autoswitch          | Persistent integer | 0   | 1       | 1
+| blood               | Persistent integer | 0   | 1       | 1
+| chatsound           | Persistent integer | 0   | 1       | 1
+| deadpush            | Persistent integer | 1   | 2       | 20
+| deathfromabove      | Persistent integer | 0   | 1       | 1
+| dropwaypoints       | Integer            | 0   | 1       | 1
+| footstepssound      | Persistent integer | 0   | 1       | 1
+| forceplayermodels   | Persistent integer | 0   | 0       | 1
+| gore                | Persistent integer | 0   | 1       | 1
+| goreeffect          | Persistent integer | N/A | N/A     | N/A
+| hidedead            | Persistent integer | 0   | 0       | 1
+| highlightscore      | Persistent integer | 0   | 1       | 1
+| hitcrosshair        | Persistent integer | 0   | 400     | 1000
+| hitsound            | Persistent integer | 0   | 0       | 2
+| hudgun              | Persistent integer | 0   | 1       | 1
+| hudgunsway          | Persistent integer | 0   | 1       | 1
+| itemtrans           | Persistent integer | 0   | 1       | 1
+| killsound           | Persistent integer | 0   | 1       | 2
+| maxradarscale       | Persistent integer | 0   | 1024    | 10000
+| minimapalpha        | Persistent float   | 0   | 1       | 1
+| minradarscale       | Persistent integer | 0   | 384     | 10000
+| muzzleflash         | Persistent integer | 0   | 1       | 1 
+| playercolor         | Persistent integer | 0   | 4       | Max colors
+| playercolorblue     | Persistent integer | 0   | 0       | Max blue colors
+| playercolorred      | Persistent integer | 0   | 0       | Max red colors
+| playermodel         | Persistent integer | 0   | 0       | Max player models
+| playheadshotsound   | Persistent integer | 0   | 1       | 2
+| radarteammates      | Persistent integer | 0   | 1       | 1
+| ragdoll             | Persistent integer | 0   | 1       | 1
+| ragdollfade         | Persistent integer | 0   | 400     | 5000
+| ragdollmillis       | Persistent integer | 0   | 10000   | 300000
+| regensound          | Persistent integer | 0   | 1       | 1
+| showclientnum       | Persistent integer | 0   | 1       | 1
+| showconnecting      | Persistent integer | 0   | 1       | 1 
+| showmodeinfo        | Persistent integer | 0   | 1       | 1
+| showping            | Persistent integer | 0   | 1       | 1
+| showpj              | Persistent integer | 0   | 1       | 1
+| showservinfo        | Persistent integer | 0   | 1       | 1
+| showspectators      | Persistent integer | 0   | 1       | 1
+| showwaypoints       | Persistent integer | 0   | 1       | 1
+| showwaypointsradius | Persistent integer | 0   | 200     | 10000
+| smoothdist          | Persistent integer | 0   | 32      | 64
+| smoothmove          | Persistent integer | 0   | 75      | 100
+| specmode            | Integer            | 0   | 0       | 2
+| swayrollfactor      | Floating point     | 1   | 3       | 30
+| swayside            | Floating point     | 0   | 0.06f   | 1
+| swaystep            | Floating point     | 1   | 39.2f   | 1
+| swayup              | Floating point     | -1  | 0.11f   | 1
+| teamcolortext       | Persistent integer | 0   | 1       | 1
+| teleteam            | Integer            | 0   | 1       | 1
+| testanims           | Integer            | 0   | 0       | 1
+| testpitch           | Integer            | -90 | 0       | 90
 
 ### Server
 
@@ -48,10 +107,10 @@
 ## Commands
 
 ### Engine
-*Coming soon™*
+*Coming soonâ„¢*
 
 ### Game
-*Coming soon™*
+*Coming soonâ„¢*
 
 ### Server
 
