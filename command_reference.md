@@ -37,11 +37,12 @@
 | maxradarscale       | Persistent integer | 0   | 1024    | 10000
 | minimapalpha        | Persistent float   | 0   | 1       | 1
 | minradarscale       | Persistent integer | 0   | 384     | 10000
-| muzzleflash         | Persistent integer | 0   | 1       | 1 
+| muzzleflash         | Persistent integer | 0   | 1       | 1
 | playercolor         | Persistent integer | 0   | 4       | Max colors
 | playercolorblue     | Persistent integer | 0   | 0       | Max blue colors
 | playercolorred      | Persistent integer | 0   | 0       | Max red colors
 | playermodel         | Persistent integer | 0   | 0       | Max player models
+| playersearch        | Persistent integer | 0   | 3       | 10
 | playheadshotsound   | Persistent integer | 0   | 1       | 2
 | radarteammates      | Persistent integer | 0   | 1       | 1
 | ragdoll             | Persistent integer | 0   | 1       | 1
@@ -49,7 +50,7 @@
 | ragdollmillis       | Persistent integer | 0   | 10000   | 300000
 | regensound          | Persistent integer | 0   | 1       | 1
 | showclientnum       | Persistent integer | 0   | 1       | 1
-| showconnecting      | Persistent integer | 0   | 1       | 1 
+| showconnecting      | Persistent integer | 0   | 1       | 1
 | showmodeinfo        | Persistent integer | 0   | 1       | 1
 | showping            | Persistent integer | 0   | 1       | 1
 | showpj              | Persistent integer | 0   | 1       | 1
