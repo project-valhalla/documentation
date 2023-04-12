@@ -20,7 +20,7 @@
 | ctftkpenalty         | Integer              | 0   | 1                   | 1          | Whether or not teamkilling the flag runner in CTF should disallow the teamkiller from picking up the flag.
 | demodir              | Persistent string    | N/A | N/A                 | N/A        | Sets the directory to which demos are saved.
 | lockmaprotation      | Integer              | N/A | N/A                 | N/A        | Whether or not to allow players to vote on maps not in the rotation (0 = any vote, 1 = master votes only, 2 = administrator votes only).
-| mastername           | String               | N/A | master.tesseract.gg | N/A        | N/A | Sets the master server address.
+| mastername           | String               | N/A | master.tesseract.gg | N/A        | Sets the master server address.
 | masterport           | Integer              | 1   | 41999               | 0xFFFF     | Sets the master server port.
 | maxclients           | Integer              | 0   | 8                   | 128        | Max players a server can accept.
 | maxdupclients        | Integer              | 0   | 0                   | 128        | Maximum number of duplicate clients allowed on a server.
@@ -61,12 +61,12 @@
 | clearipbans       | N/A        | Forgets about all of the issued IP bans.
 | clearusers        | N/A        |
 | ipban             | 1          | Issues an IP ban.
-| maprotation       | 4          | Triggered when a game ends and intermission starts.
+| maprotation       | 4          | Defines server's map rotation.
 | maprotationreset  | N/A        | Resets map rotation in a server.
 | startlistenserver | N/A        | Starts a listen server from within a running game client.
 | stoplistenserver  | N/A        | Stops a listen server from within a running game client.
-| teamkillkick      | 3          | Triggered when a map loading has finished.
-| teamkillkickreset | N/A        | Triggered everytime our client spawns.
+| teamkillkick      | 3          | Specifies the gamemode in which the teamkill limit is used, the maximum number of teamkills a player is allowed to commit and the duration of teamkill auto-kicks.
+| teamkillkickreset | N/A        | Removes automatic kicks triggered by an excessive amount of teamkills (specified with `teamkillkick`).
 
 ## CubeScript Hooks
 
