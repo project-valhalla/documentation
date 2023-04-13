@@ -111,7 +111,157 @@
 *Coming soon™*
 
 ### Game
-*Coming soon™*
+
+| Command                 | Arguments  | Description
+| ------------------------|------------|---------------------
+| allowthirdperson        | N/A        | Command that returns a boolean value: 1 if `thirdperson` is allowed, 0 if not.
+| auth                    |
+| authkey                 |
+| authkick                |
+| botadd                  | 1          | Adds a bot with a random player model and name and the skill specified by the first argument.
+| botbalance              |
+| botdel                  | N/A        | Kicks the most recent bot that was added.
+| botlimit                |            |
+| checkmaps               |            |
+| clearbans               | N/A        | Clears every ban that has been issued. Bans are automatically cleared when a server is empty.
+| cleardemos              | N/A        | Clears all demos saved in a server.
+| clearwaypoints          | N/A        | Clears all waypoints without needing to reload a map.
+| clearwpcache            |            | Clears waypoints cache.
+| cycleweapon             |            |
+| dauth                   |            |
+| dauthkick               |            |
+| delselwaypoints         | N/A        | Clears waypoints inside grid selection.
+| dropflag                | N/A        | Drops the flag we are holding in CTF modes.
+| follow                  | N/A        |
+| gamespeed               |            |
+| genauthkey              |            |
+| getaccuracy             |            |
+| getclientammo           |            |
+| getclientcolor          |            |
+| getclientcolorname      |            |
+| getclientdeaths         |            |
+| getclientfrags          |            |
+| getclienthealth         |            |
+| getclientmaxhealth      |            |
+| getclientmodel          |            |
+| getclientname           |            |
+| getclientnum            |            |
+| getclientpowerup        |            |
+| getclientpowerupmillis  |            |
+| getclientprivilege      |            |
+| getclientscore          |            |
+| getclientshield         |            |
+| getclientteam           |            |
+| getclientweapon         |            |
+| getdeaths               |            |
+| getdemo                 |            |
+| getflags                |            |
+| getfollow               |            |
+| getfrags                |            |
+| getkillfeedactor        |            |
+| getkillfeedcrit         |            |
+| getkillfeedtarget       |            |
+| getkillfeedweap         |            |
+| getmap                  | N/A        | Downloads the map that is available on the server if it has been sent with `sendmap`. Only used in the map editor.
+| getmastermode           |            |
+| getmastermodename       |            |
+| getmode                 |            |
+| getmodename             |            |
+| getmodeprettyname       |            |
+| getmutators             |            |
+| getmutdesc              |            |
+| getname                 |            |
+| getnextmode             |            |
+| getnextmutators         |            |
+| getplayercolor          |            |
+| getscorelimit           |            |
+| getservauth             |            |
+| getservdesc             |            |
+| getteam                 |            |
+| getteamname             |            |
+| getteamscore            |            |
+| gettotaldamage          |            |
+| gettotalshots           |            |
+| getweapon               |            |
+| goto                    |            |
+| gotosel                 |            |
+| hasauthkey              |            |
+| hashpwd                 |            |
+| ignore                  |            |
+| intermission            | N/A        | Returns a boolean value: 1 if the game has ended (intermission), 0 if not.
+| isadmin                 |            |
+| isai                    |            |
+| isauth                  |            |
+| isdead                  |            |
+| isignored               |            |
+| islagged                |            |
+| ismaster                |            |
+| isspectator             |            |
+| kick                    |            |
+| listclients             |            |
+| listdemos               |            |
+| loadwaypoints           |            |
+| loopscoreboard          |            |
+| map                     |            |
+| mastermode              |            |
+| melee                   |            |
+| mode                    |            |
+| movewaypoints           |            |
+| mutator                 |            |
+| mute                    |            |
+| name                    |            |
+| nextfollow              |            |
+| nextweapon              |            |
+| numscoreboard           |            |
+| paused                  |            |
+| pausegame               |            |
+| prettygamespeed         |            |
+| primary                 | N/A        | Fires the primary fire of the selected weapon. In other Cube games, this command is usually replaced with `shoot`. If used when dead, the player is also respawned.
+| recorddemo              |            |
+| refreshscoreboard       |            |
+| registertip             |            |
+| respawn                 | N/A        | Respawns our client if the spawn delay has expired.
+| sauth                   |            |
+| sauthkick               |            |
+| saveauthkeys            |            |
+| savewaypoints           |            |
+| say                     |            |
+| sayteam                 |            |
+| scoreboardhighlight     |            |
+| scoreboardmap           |            |
+| scoreboardmode          |            |
+| scoreboardmultiplayer   |            |
+| scoreboardping          |            |
+| scoreboardpj            |            |
+| scoreboardservinfo      |            |
+| scoreboardshowclientnum |            |
+| scoreboardshowfrags     |            |
+| scoreboardstatus        |            |
+| scoreboardtime          |            |
+| secondary               | N/A        | Fires the secondary fire of the selected weapon. If used when dead, the player is also respawned.
+| sendmap                 | N/A        | Sends the map to the server so that it can be downloaded with `getmap`.
+| servcmd                 |            |
+| servinfoicon            |            |
+| servinfomastermode      |            |
+| servinfomastermodename  |            |
+| servinfomode            |            |
+| servinfomodename        |            |
+| servinfotime            |            |
+| setmaster               |            |
+| setteam                 |            |
+| setweapon               |            |
+| spectating              | N/A        | Returns a boolean value: 1 if our client is spectating, 0 if not.
+| spectator               |            |
+| stopdemo                |            |
+| suicide                 | N/A        | Immediately kills our player.
+| taunt                   | N/A        | Plays the current character's taunt animation and voice line if available.
+| team                    |            |
+| timeremaining           |            |
+| unignore                |            |
+| unmute                  |            |
+| useitem                 |            |
+| weapon                  |            |
+| whisper                 |            |
 
 ### Server
 
