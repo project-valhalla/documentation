@@ -280,18 +280,20 @@
 
 ## CubeScript Hooks
 
-| Hook              | Event                                                                                               |
-| ------------------|-----------------------------------------------------------------------------------------------------|
-| on_connect        | Triggered every time our client successfully connects to a server, being it local or not.           |
-| on_death          | Triggered each time our client dies.                                                                |
-| on_disconnect     | Triggered every time our client disconnects from a server, being it local or not.                   |
-| on_edittoggle     | Triggered when we enter edit mode (originally `edittoggled`).                                       |
-| on_intermission   | Triggered when a game ends and intermission starts (originally `intermission`).                     |
-| on_kill           | Triggered when our client kills another.                                                            |
-| on_killfeed       | Triggered each time a player dies.                                                                  |
-| on_mainmenutoggle | Triggered when the main menu is opened (usually by pressing "ESC") (originally `mainmenutoggled`).  |
-| on_mapstart       | Triggered when a map has finished loading (originally `mapstart`).                                  |
-| on_spawn          | Triggered when our client spawns.                                                                   |
-| resetgl           | Triggered when we apply settings changes and we need to reset OpenGL.                               |
-| resetshaders      | Triggered when we apply settings changes and we need to reset the shaders.                          |
-| resetsound        | Triggered when we apply settings changes and we need to reset audio.                                |
+| Hook              | Event                                                                                              
+| ------------------|----------------------------------------------------------------------------------------------------|
+| on_connect        | Triggers every time our client successfully connects to a server, being it local or not.           |
+| on_death          | Triggers each time our client dies.                                                                |
+| on_disconnect     | Triggers every time our client disconnects from a server, being it local or not.                   |
+| on_edittoggle     | Triggers when we enter edit mode (originally `edittoggled`).                                       |
+| on_intermission   | Triggers when a game ends and intermission starts (originally `intermission`).                     |
+| on_kill           | Triggers when our client kills another.                                                            |
+| on_killfeed       | Triggers each time a player dies.                                                                  |
+| on_mainmenutoggle | Triggers when the main menu is opened (usually by pressing "ESC") (originally `mainmenutoggled`).  |
+| on_mapstart       | Triggers when a map has finished loading (originally `mapstart`).                                  |
+| on_spawn          | Triggers when our client spawns.                                                                   |
+| on_suicide        | Triggers each time we kill our own player.                                                         |
+| on_teamkill       | Triggers each time we kill an ally.                                                                |
+| resetgl           | Triggers when we apply settings changes and we need to reset OpenGL.                               |
+| resetshaders      | Triggers when we apply settings changes and we need to reset the shaders.                          |
+| resetsound        | Triggers when we apply settings changes and we need to reset audio.                                |
