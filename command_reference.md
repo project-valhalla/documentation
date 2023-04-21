@@ -1,14 +1,18 @@
 ## Variables
 
-### Engine
-
+<details>
+  <summary>Engine</summary>
+  
 | Variable       | Type           | Min | Default | Max | Description |
 | ---------------| ---------------|-----|---------|-----|-------------|
 | allfaces       | Integer        | 0   | 0       | 1   | Allows texturing commands to apply the new texture to all the sides of the selected geometry.
 | avatarfov      | Integer        | 10  | 40      | 100 | Field of view of the first person weapon.
 
-### Game
+</details>
 
+<details>
+  <summary>Game</summary>
+  
 | Variable            | Type               | Min | Default | Max         | Description |
 | --------------------|--------------------|-----|---------|-------------|-------------|
 | aidebug             | Integer            | 0   | 0       | 6           |
@@ -69,8 +73,11 @@
 | teleteam            | Integer            | 0   | 1       | 1
 | testanims           | Integer            | 0   | 0       | 1
 | testpitch           | Integer            | -90 | 0       | 90
+  
+</details>
 
-### Server
+<details>
+  <summary>Server</summary>
 
 | Variable             | Type                 | Min | Default             | Max        | Description|
 | ---------------------|----------------------|-----|---------------------|------------|------------|
@@ -105,12 +112,17 @@
 | spectatorchat        | Integer              | 0   | 0                   | 1          | Whether or not chat messages sent by spectators should be visible to players. When 0, spectators are allowed to chat with players (default); when 1, spectators are only allowed to chat with other spectators.
 | updatemaster         | Integer              | 0   | 1                   | 1          | Toggles whether or not the server should report to the master server.
 
+</details>
+
 ## Commands
 
-### Engine
-*Coming soon™*
+<details>
+  <summary>Engine</summary>
+  Coming soon™
+</details>
 
-### Game
+<details>
+  <summary>Game</summary>
 
 | Command                 | Arguments  | Description
 | ------------------------|------------|---------------------
@@ -263,7 +275,10 @@
 | weapon                  |            |
 | whisper                 |            |
 
-### Server
+</details>
+
+<details>
+  <summary>Server</summary>
 
 | Command           | Arguments  | Description
 | ------------------|------------|---------------------
@@ -277,6 +292,8 @@
 | stoplistenserver  | N/A        | Stops a listen server from within a running game client.
 | teamkillkick      | 3          | Specifies the gamemode in which the teamkill limit is used, the maximum number of teamkills a player is allowed to commit and the duration of teamkill auto-kicks.
 | teamkillkickreset | N/A        | Removes automatic kicks triggered by an excessive amount of teamkills (specified with `teamkillkick`).
+
+</details>
 
 ## CubeScript Hooks
 
