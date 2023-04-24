@@ -297,6 +297,20 @@
 
 ## CubeScript Hooks
 
+<details>
+  <summary>Engine</summary>
+  
+| Hook              | Event                                                                                              
+| ------------------|----------------------------------------------------------------------------------------------------|
+| resetgl           | Triggers when we apply settings changes and we need to reset OpenGL.                               |
+| resetshaders      | Triggers when we apply settings changes and we need to reset the shaders.                          |
+| resetsound        | Triggers when we apply settings changes and we need to reset audio.                                |
+
+</details>
+
+<details>
+  <summary>Game</summary>
+  
 | Hook              | Event                                                                                              
 | ------------------|----------------------------------------------------------------------------------------------------|
 | on_connect        | Triggers every time our client successfully connects to a server, being it local or not.           |
@@ -311,6 +325,5 @@
 | on_spawn          | Triggers when our client spawns.                                                                   |
 | on_suicide        | Triggers each time we kill our own player.                                                         |
 | on_teamkill       | Triggers each time we kill an ally.                                                                |
-| resetgl           | Triggers when we apply settings changes and we need to reset OpenGL.                               |
-| resetshaders      | Triggers when we apply settings changes and we need to reset the shaders.                          |
-| resetsound        | Triggers when we apply settings changes and we need to reset audio.                                |
+
+</details>
