@@ -300,7 +300,7 @@
 <details>
   <summary>Engine</summary>
   
-| Hook              | Event                                                                                              
+| Name              | Description                                                                                              
 | ------------------|----------------------------------------------------------------------------------------------------|
 | resetgl           | Triggers when we apply settings changes and we need to reset OpenGL.                               |
 | resetshaders      | Triggers when we apply settings changes and we need to reset the shaders.                          |
@@ -311,7 +311,7 @@
 <details>
   <summary>Game</summary>
   
-| Hook              | Event                                                                                              
+| Name              | Description                                                                                              
 | ------------------|----------------------------------------------------------------------------------------------------|
 | on_connect        | Triggers every time our client successfully connects to a server, being it local or not.           |
 | on_death          | Triggers each time our client dies.                                                                |
