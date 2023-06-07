@@ -3,11 +3,43 @@
 <details>
   <summary>Engine</summary>
   
-| Variable       | Type           | Min | Default | Max | Description |
-| ---------------| ---------------|-----|---------|-----|-------------|
-| allfaces       | Integer        | 0   | 0       | 1   | Allows texturing commands to apply the new texture to all the sides of the selected geometry.
-| avatarfov      | Integer        | 10  | 40      | 100 | Field of view of the first person weapon.
+| Variable                 | Type               | Min | Default | Max     | Description |
+| -------------------------|--------------------|-----|---------|---------|-------------|
+| allfaces                 | Integer            | 0   | 0       | 1       | Allows texturing commands to apply the new texture to all the sides of the selected geometry.
+| avatarfov                | Integer            | 10  | 40      | 100     | Field of view of the first person weapon.
+| dbgcolmesh               | Integer            | 0   | 0       | 1       |
+| flarecutoff              | Persistent integer | 0   | 1000    | 10000   |
+| flaresize                | Persistent integer | 20  | 100     | 500     |
+| fullbrightmodels         | Persistent integer | 0   | 0       | 200     | 
+| gpuskel                  | Persistent integer | 0   | 0       | 1       |
+| lnblendpower             | Floating point     | 0   | 6.0f    | 1000    |
+| lnjittermillis           | Integer            | 0   | 100     | 1000    |
+| lnjitterradius           | Integer            | 0   | 3       | 100     |
+| lnjitterscale            | Floating point     | 0   | 0.2f    | 10      |
+| lnscrollmillis           | Integer            | 1   | 250     | 5000    |
+| lnscrollscale            | Floating point     | 0   | 0.05f   | 10      |
+| maxskelanimdata          | Integer            | 1   | 192     | 0       |
+| ragdollairfric           | Floating point     | 0   | 0.996f  | 1       | 
+| ragdollbodyfric          | Floating point     | 0   | 0.95f   | 1       |
+| ragdollbodyfricscale     | Floating point     | 0   | 2       | 10      |
+| ragdollconstrain         | Integer            | 1   | 7       | 100     |
+| ragdollexpireoffset      | Integer            | 0   | 2500    | 30000   |
+| ragdolleyesmooth         | Floating point     | 0   | 0       | 1       |
+| ragdolleyesmoothmillis   | Integer            | 1   | 1       | 10000   |
+| ragdollgravity           | Floating point     | 0   | 198.0f  | 200     |
+| ragdollgroundfric        | Floating point     | 0   | 0.8f    | 1       |
+| ragdollrotfric           | Floating point     | 0   | 0.85f   | 1       |
+| ragdollrotfricstop       | Floating point     | 0   | 0.1f    | 1       |
+| ragdolltimestepmax       | Integer            | 1   | 10      | 50      |
+| ragdolltimestepmin       | Integer            | 1   | 5       | 50      |
+| ragdollunstick           | Floating point     | 0   | 10      | 1e3f    |
+| ragdollwaterexpireoffset | Integer            | 0   | 4000    | 30000   |
+| ragdollwaterfric         | Floating point     | 0   | 0.85f   | 1       |
+| softexplosion            | Persistent integer | 0   | 0       | 1       |
+| softexplosionblend       | Integer            | 1   | 16      | 64      |
+| testtags                 | Integer            | 0   | 0       | 1       |
 
+  
 </details>
 
 <details>
