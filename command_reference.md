@@ -5,20 +5,167 @@
   
 | Variable                 | Type               | Min | Default | Max     | Description |
 | -------------------------|--------------------|-----|---------|---------|-------------|
+| aaenvmap                 | Persistent integer | 0   | 1       | 1       |
 | allfaces                 | Integer            | 0   | 0       | 1       | Allows texturing commands to apply the new texture to all the sides of the selected geometry.
-| avatarfov                | Integer            | 10  | 40      | 100     | Field of view of the first person weapon.
+| amd_eal_bug              | Integer            | 0   | 0       | 1       |
+| amd_pf_bug               | Integer            | 0   | 0       | 1       |
+|animationinterpolationtime| Integer            | 0   |  200    |  1000   |
+| aodepthformat            | Integer            | 1   | 0       | 0       |
+| aoderiv                  | Integer            | -1  | 1       | 1       |
+| attachradius             | Integer            | 1   | 100     | 1000    |
+| avatarfov                | Integer            | 10  | 40      | 100     | Field of view of the avatar (first person weapon).
+| avatarzoomfov            | Integer            | 10  | 25      | 60      | Field of view of the avatar (first person weapon) while zoomed in. Currently read-only.
+| batchdecals              | Integer            | 0   |  1      |  1      |
+| batchgeom                | Integer            | 0   |  1      |  1      |
+| clampsky                 | Integer            | 0   |  1      |  1      |
+| compresspng              | Persistent integer | 0   | 9       | 9       |
+| compresstga              | Persistent integer | 0   | 1       | 1       |
+| connectname              | Persistent string  | N/A | N/A     | N/A     |
+| csmcull                  | Integer            | 0   |  1      |  1      |
+| csmfarplane              | Integer            | 64  |  1024   |  16384  |
+| csminoq                  | Integer            | 0   |  1      |  1      |
+| csmnearplane             | Integer            | 1   |  1      |  16     |
+| cullparticles            | Integer            | 0   |  1      |  1      |
+| dbgalias                 | Integer            | 0   | 4       | 1000    |
 | dbgcolmesh               | Integer            | 0   | 0       | 1       |
+| dbgdds                   | Integer            | 0   |  0      |  1      |
+| dbgexts                  | Integer            | 0   | 0       | 1       |
+| dbggrass                 | Integer            | 0   | 0       | 1       |
+| dbgmodes                 | Integer            | 0   | 0       | 1       |
+| dbgmovie                 | Integer            | 0   | 0       | 1       |
+| dbgpcull                 | Integer            | 0   |  0      |  1      |
+| dbgpseed                 | Integer            | 0   |  0      |  1      |
+| dbgshader                | Integer            | 0   |  1      |  2      |
+| dbgsound                 | Integer            | 0   |  0      |  1      |
+| dbgstain                 | Integer            | 0   |  0      |  1      |
+| dbgubo                   | Integer            | 0   |  0      |  1      |
+| dbgvars                  | Integer            | 0   | 0       | 1       |
+| debugao                  | Integer            | 0   | 0       | 1       | 
+| debugbloom               | Integer            | 0   | 0       | 1       |
+| debugdepth               | Integer            | 0   | 0       | 1       |
+| debuglightscissor        | Integer            | 0   |  0      |  1      |
+| debugrefract             | Integer            | 0   | 0       | 1       |
+| debugrh                  | Integer            | -1  | 0       | RH_MAXSPLITS*(RH_MAXGRID + 2) |
+| debugrsm                 | Integer            | 0   | 0       | 2       |
+| debugshadowatlas         | Integer            | 0   | 0       |  3      |
+| debugsmaa                | Integer            | 0   | 0       | 5       |
+| debugstencil             | Integer            | 0   | 0       | 0xFF    |
+| debugtqaa                | Integer            | 0   | 0       | 2       |
+| defershaders             | Integer            | 0   |  1      |  1      |
+| depthfaillights          | Integer            | 0   |  1      |  1      |
+| depthtestlights          | Integer            | 0   |  2      |  2      |
+| desktoph                 | Integer            | 1   | 0       | 0       |
+| desktopw                 | Integer            | 1   | 0       | 0       |
+| dtoutline                | Integer            | 0   |  1      |  1      |
+| editcursor               | Integer            | 0   | 1       | 1       |
+| editing                  | Integer            | 1   | 0       | 0       |
+| entautoviewdist          | Integer            | 0   | 25      | 100     |
+| entcamdir                | Persistent integer | 0   | 1       | 1       |
+| entdrop                  | Integer            | 0   | 2       | 3       |
+| entitysurf               | Integer            | 0   | 0       | 1       |
+| entmovingshadow          | Integer            | 0   | 1       | 1       |
+| entselradius             | Integer            | 0   | 2       | 10      |
+| entselsnap               | Integer            | 0   | 0       | 1       |
+| envmapbb                 | Integer            | 0   | 0       | 1       |
+| envmapradius             | Integer            | 0   | 128     | 10000   |
 | flarecutoff              | Persistent integer | 0   | 1000    | 10000   |
 | flaresize                | Persistent integer | 20  | 100     | 500     |
+| floatspeed               | Integer            | 1   | 100     | 10000   |
+| fogoverlay               | Integer            | 0   | 1       | 1       |
+| forcespotlights          | Integer            | 1   |  0      |  0      |
+| frametimer               | Integer            | 0   | 0       | 1       |
+| fullbright               | Integer            | 0   | 0       | 1       |
+| fullbrightlevel          | Integer            | 0   | 160     | 255     |
 | fullbrightmodels         | Persistent integer | 0   | 0       | 200     | 
+| gcolorclear              | Integer            | 0   |  1      |  1      |
+| gdepthclear              | Integer            | 0   |  1      |  1      |
+| gdepthformat             | Integer            | 1   | 0       | 0       |
+| ghasstencil              | Integer            | 1   | 0       | 0       |
+| glcompat                 | Integer            | 1   | 0       | 0       |
+| glerr                    | Integer            | 0   | 0       | 1       |
+| glslversion              | Integer            | 1   | 0       | 0       |
+| glversion                | Integer            | 1   | 0       | 0       |
 | gpuskel                  | Persistent integer | 0   | 0       | 1       |
+| gridlookup               | Integer            | 0   | 0       | 1       |
+| hdraccummillis           | Integer            | 1   | 33      | 1000    |
+| hdrreduce                | Integer            | 0   | 2       | 2       |
+| hidechanges              | Integer            | 0   | 0       | 1       |
+| hidehud                  | Integer            | 0   | 0       | 1       |
+| hidestats                | Integer            | 0   | 0       | 1       |
+| hwcubetexsize            | Integer            | 1   |  0      |  0      |
+| hwmaxaniso               | Integer            | 1   |  0      |  0      |
+| hwtexsize                | Integer            | 1   |  0      |  0      |
+| hwtexunits               | Integer            | 1   |  0      |  0      |
+| hwvtexunits              | Integer            | 1   |  0      |  0      |
+| intel_mapbufferrange_bug | Integer            | 0   | 0       | 1       |
+| intel_texalpha_bug       | Integer            | 0   | 0       | 1       |
+| invalidcubeguard         | Integer            | 0   | 1       | 1       |
+| lastdisconnectreason     | Read-only string   | N/A | N/A     | N/A     |
+| lightpassesused          | Integer            | 1   |  0      |  0      |
+| lightsoccluded           | Integer            | 1   |  0      |  0      |
+| lightsvisible            | Integer            | 1   |  0      |  0      |
+| lighttilealignh          | Integer            | 1   |  16     |  256    |
+| lighttilealignw          | Integer            | 1   |  16     |  256    |
 | lnblendpower             | Floating point     | 0   | 6.0f    | 1000    |
 | lnjittermillis           | Integer            | 0   | 100     | 1000    |
 | lnjitterradius           | Integer            | 0   | 3       | 100     |
 | lnjitterscale            | Floating point     | 0   | 0.2f    | 10      |
 | lnscrollmillis           | Integer            | 1   | 250     | 5000    |
 | lnscrollscale            | Floating point     | 0   | 0.05f   | 10      |
+| mainmenu                 | Read-only Integer  | 1   | 1       | 0       |
+| mapmusic                 | String             | N/A | N/A     | N/A     | Music track of a map. Each time we load a map, this variable is updated with the current map's music track (if available).
+| maptitle                 | String             | N/A | "Untitled Map by Unknown" | N/A | Title of a map. Each time we load a map, this variable is updated with the current map's title (if available).
+| mastermotd               | String             | N/A | N/A     | N/A     |
+| maxdrawbufs              | Integer            | 1   | 0       | 0       |
+| maxdualdrawbufs          | Integer            | 1   | 0       | 0       |
+| maxfsuniforms            | Integer            | 1   |  0      |  0      |
+| maxgrass                 | Integer            | 10  | 10000   | 10000   |
+| maxmerge                 | Integer            | 0   | 6       | 12      |
+| maxmodelradiusdistance   | Integer            | 10  |  200    |  1000   |
+| maxpvsblocker            | Integer            | 1   | 512     | 1<<16   |
 | maxskelanimdata          | Integer            | 1   | 192     | 0       |
+| maxtexoffset             | Integer            | 1   |  0      |  0      |
+| maxtexrectoffset         | Integer            | 1   |  0      |  0      |
+| maxvsuniforms            | Integer            | 1   |  0      |  0      |
+| mesa_swap_bug            | Integer            | 0   | 0       | 1       |
+| mesa_texrectoffset_bug   | Integer            | 0   | 0       | 1       |
+| minface                  | Integer            | 0   | 4       | 12      |
+| mintexoffset             | Integer            | 1   |  0      |  0      |
+| mintexrectoffset         | Integer            | 1   |  0      |  0      |
+| mipvis                   | Integer            | 0   | 0       | 1       |
+| modelpreviewfov          | Integer            | 10  | 20      | 100     |
+| modelpreviewpitch        | Integer            | -90 | -15     | 90      |
+| movieaccelblit           | Integer            | 0   | 0       | 1       |
+| movieaccelyuv            | Integer            | 0   | 1       | 1       |
+| moviedir                 | Persistent string  | N/A | "movie" | N/A     | Similarly to `screenshotdir`, directory to which movies are saved.
+| msaadepthblit            | Integer            | 0   | 0       | 1       |
+| msaalight                | Integer            | 1   | 0       | 0       |
+| msaamaxcolortexsamples   | Integer            | 1   | 0       | 0       |
+| msaamaxdepthtexsamples   | Integer            | 1   | 0       | 0       | 
+| msaamaxsamples           | Integer            | 1   | 0       | 0       |
+| msaaminsamples           | Integer            | 1   | 0       | 0       |
+| msaasamples              | Integer            | 1   | 0       | 0       |
+| numcpus                  | Integer            | 1   | 1       | 16      |
+| numoctaents              | Integer            | 1   | 0       | 0       |
+| octaentsize              | Integer            | 0   | 64      | 1024    |
+| oqdist                   | Integer            | 0   |  256    |  1024   |
+| oqdynent                 | Integer            | 0   |  1      |  1      |
+| oqfrags                  | Integer            | 0   |  8      |  64     |
+| oqgeom                   | Integer            | 0   |  1      |  1      |
+| oqlights                 | Integer            | 0   |  1      |  1      |
+| oqmm                     | Integer            | 0   |  4      |  8      |
+| oqvol                    | Integer            | 0   |  1      |  1      |
+| oqwait                   | Integer            | 0   |  1      |  1      |
+| outline                  | Integer            | 0   |  0      |  1      |
+| paintblendmapdelay       | Integer            | 1   | 500     | 3000    |
+| paintblendmapinterval    | Integer            | 1   | 30      | 3000    |
+| passthroughcube          | Integer            | 0   | 1       | 1       |
+| passthroughent           | Integer            | 0   | 1       | 1       |
+| passthroughsel           | Integer            | 0   | 0       | 1       |
+| physinterp               | Integer            | 0   | 1       | 1       |
+| printvbo                 | Integer            | 0   | 0       | 1       |
+| progressbackground       | Integer            | 0   | 0       | 1       |
+| pvsleafsize              | Integer            | 1   | 64      | 1024    |
 | ragdollairfric           | Floating point     | 0   | 0.996f  | 1       | 
 | ragdollbodyfric          | Floating point     | 0   | 0.95f   | 1       |
 | ragdollbodyfricscale     | Floating point     | 0   | 2       | 10      |
@@ -35,11 +182,63 @@
 | ragdollunstick           | Floating point     | 0   | 10      | 1e3f    |
 | ragdollwaterexpireoffset | Integer            | 0   | 4000    | 30000   |
 | ragdollwaterfric         | Floating point     | 0   | 0.85f   | 1       |
+| replayparticles          | Integer            | 0   |  1      |  1      |
+| rhclipgrid               | Integer            | 0   | 1       | 1       |
+| rhdynmm                  | Integer            | 0   | 0       | 1       |
+| rhdyntex                 | Integer            | 0   | 0       | 1       |
+| rhinoq                   | Integer            | 0   |  1      |  1      |
+| rsmcull                  | Integer            | 0   | 1       | 1       |
+| savebak                  | Persistent integer | 0   | 2       | 2       | Controls whether `.bak` files (backups) of the map we are editing are saved at each map save (`/savemap`).
+| scaledds                 | Integer            | 0   |  2      |  4      |
+| screenshotdir            | Persistent string  | N/A | "screenshot" | N/A| Directory to which screenshots are saved (`*/screenshot`).
+| screenshotformat         | Persistent integer | 0   | IMG_PNG | NUMIMG-1| 
+| screenshotquality        | Persistent integer | 0   | 97      | 100     |
+| sdl_xgrab_bug            | Integer            | 0   | 0       | 1       |
+| selectcorners            | Integer            | 0   | 0       | 1       |
+| selectionsurf            | Integer            | 0   | 0       | 1       |
+| serverip                 | String             | N/A | N/A     | N/A     |
+| serveruprate             | Integer            | 0   |  0      |2147483647|
+| showentradius            | Integer            | 0   | 1       | 1       |
+| showsky                  | Integer            | 0   |  1      |  1      |
+| smaa4x                   | Integer            | 1   | 0       | 0       |
+| smaas2x                  | Integer            | 1   | 0       | 0       |
+| smaat2x                  | Integer            | 1   | 0       | 0       |
+| smbbcull                 | Integer            | 0   |  1      |  1      |
+| smborder                 | Integer            | 0   |  3      |  16     |
+| smborder2                | Integer            | 0   |  4      |  16     |
+| smdistcull               | Integer            | 0   |  1      |  1      |
+| smdynshadow              | Integer            | 0   |  1      |  1      |
+| sminoq                   | Integer            | 0   |  1      |  1      |
+| smmaxsize                | Integer            | 1   |  384    |  1024   |
+| smminradius              | Integer            | 0   |  16     |  10000  |
+| smminsize                | Integer            | 1   |  96     |  1024   |
+| smnodraw                 | Integer            | 0   |  0      |  1      |
+| smnoshadow               | Integer            | 0   |  0      |  1      |
+| smquery                  | Integer            | 0   |  1      |  1      |
+| smsidecull               | Integer            | 0   |  1      |  1      |
+| smused                   | Integer            | 1   |  0      |  0      |
+| smviscull                | Integer            | 0   |  1      |  1      |
 | softexplosion            | Persistent integer | 0   | 0       | 1       |
 | softexplosionblend       | Integer            | 1   | 16      | 64      |
+| statrate                 | Integer            | 1   | 200     | 1000    |
+| stereo                   | Integer            | 0   |  1      |  1      |
 | testtags                 | Integer            | 0   | 0       | 1       |
+| testtricol               | Integer            | 0   | 0       | 2       |
+| textinputfilter          | Integer            | 0   | 5       | 1000    |
+| thirdperson              | Integer            | 0   | 0       | 2       |
+| tqaaresolvegather        | Integer            | 1   | 0       | 0       |
+| usedds                   | Integer            | 0   |  1      |  1      |
+| usetexcompress           | Integer            | 1   | 0       | 0       |
+| usetexgather             | Integer            | 1   | 0       | 0       |
+| useubo                   | Integer            | 1   | 0       | 0       |
+| usevdelta                | Integer            | 1   | 0       | 0       |
+| volderiv                 | Integer            | -1  |  1      |  1      |
+| waterlod                 | Persistent integer | 0   | 1       | 3       |
+| waterreflectstep         | Persistent integer | 1   | 32      | 10000   |
+| watersubdiv              | Persistent integer | 0   | 2       | 3       |
+| wireframe                | Integer            | 0   | 0       | 1       |
+| zoom                     | Integer            | -1  | 0       | 1       |
 
-  
 </details>
 
 <details>
