@@ -2,7 +2,7 @@
 
 <details>
   <summary>Engine</summary>
-  
+
 | Variable                 | Type               | Min | Default | Max     | Description |
 | -------------------------|--------------------|-----|---------|---------|-------------|
 | aaenvmap                 | Persistent integer | 0   | 1       | 1       |
@@ -40,7 +40,7 @@
 | dbgstain                 | Integer            | 0   |  0      |  1      |
 | dbgubo                   | Integer            | 0   |  0      |  1      |
 | dbgvars                  | Integer            | 0   | 0       | 1       |
-| debugao                  | Integer            | 0   | 0       | 1       | 
+| debugao                  | Integer            | 0   | 0       | 1       |
 | debugbloom               | Integer            | 0   | 0       | 1       |
 | debugdepth               | Integer            | 0   | 0       | 1       |
 | debuglightscissor        | Integer            | 0   |  0      |  1      |
@@ -76,7 +76,7 @@
 | frametimer               | Integer            | 0   | 0       | 1       |
 | fullbright               | Integer            | 0   | 0       | 1       |
 | fullbrightlevel          | Integer            | 0   | 160     | 255     |
-| fullbrightmodels         | Persistent integer | 0   | 0       | 200     | 
+| fullbrightmodels         | Persistent integer | 0   | 0       | 200     |
 | gcolorclear              | Integer            | 0   |  1      |  1      |
 | gdepthclear              | Integer            | 0   |  1      |  1      |
 | gdepthformat             | Integer            | 1   | 0       | 0       |
@@ -141,7 +141,7 @@
 | msaadepthblit            | Integer            | 0   | 0       | 1       |
 | msaalight                | Integer            | 1   | 0       | 0       |
 | msaamaxcolortexsamples   | Integer            | 1   | 0       | 0       |
-| msaamaxdepthtexsamples   | Integer            | 1   | 0       | 0       | 
+| msaamaxdepthtexsamples   | Integer            | 1   | 0       | 0       |
 | msaamaxsamples           | Integer            | 1   | 0       | 0       |
 | msaaminsamples           | Integer            | 1   | 0       | 0       |
 | msaasamples              | Integer            | 1   | 0       | 0       |
@@ -166,7 +166,7 @@
 | printvbo                 | Integer            | 0   | 0       | 1       |
 | progressbackground       | Integer            | 0   | 0       | 1       |
 | pvsleafsize              | Integer            | 1   | 64      | 1024    |
-| ragdollairfric           | Floating point     | 0   | 0.996f  | 1       | 
+| ragdollairfric           | Floating point     | 0   | 0.996f  | 1       |
 | ragdollbodyfric          | Floating point     | 0   | 0.95f   | 1       |
 | ragdollbodyfricscale     | Floating point     | 0   | 2       | 10      |
 | ragdollconstrain         | Integer            | 1   | 7       | 100     |
@@ -191,7 +191,7 @@
 | savebak                  | Persistent integer | 0   | 2       | 2       | Controls whether `.bak` files (backups) of the map we are editing are saved at each map save (`/savemap`).
 | scaledds                 | Integer            | 0   |  2      |  4      |
 | screenshotdir            | Persistent string  | N/A | "screenshot" | N/A| Directory to which screenshots are saved (`*/screenshot`).
-| screenshotformat         | Persistent integer | 0   | IMG_PNG | NUMIMG-1| 
+| screenshotformat         | Persistent integer | 0   | IMG_PNG | NUMIMG-1|
 | screenshotquality        | Persistent integer | 0   | 97      | 100     |
 | sdl_xgrab_bug            | Integer            | 0   | 0       | 1       |
 | selectcorners            | Integer            | 0   | 0       | 1       |
@@ -238,19 +238,47 @@
 | watersubdiv              | Persistent integer | 0   | 2       | 3       |
 | wireframe                | Integer            | 0   | 0       | 1       |
 | zoom                     | Integer            | -1  | 0       | 1       |
+| tqaa,                    | Persistent integer | 0   | 0       | 1       |
+| tqaamovemask             | Persistent integer | 0   | 1       | 1       |
+| fxaa                     | Persistent integer | 0   | 0       | 1       |
+| fxaaquality              | Persistent integer | 0   | 1       | 3       |
+| fxaagreenluma            | Persistent integer | 0   | 0       | 1       |
+| smaa                     | Persistent integer | 0   | 0       | 1       |
+| smaaspatial              | Persistent integer | 0   | 1       | 1       |
+| smaaquality              | Persistent integer | 0   | 2       | 3       |
+| smaacoloredge            | Persistent integer | 0   | 0       | 1       |
+| smaagreenluma            | Persistent integer | 0   | 0       | 1       |
+| smaadepthmask            | Integer            | 0   | 1       | 1       |
+| smaastencil              | Integer            | 0   | 1       | 1       |
+| blendpaintmode           | Integer            | 0   | 0       | 5       |
+| blendtexsize             | Peristent Integer  | 0   | 9       | 11      |
+| rate                     | Integer            | 0   | 0       | 1024    |
+| throttle_interval,       | Integer            | 0   | 5       | 30      |
+| throttle_accel           | Integer            | 0   | 2       | 32      |
+| throttle_decel           | Integer            | 0   | 2       | 32      |
+| maxcon                   | Persistent integer | 10  | 200     | 1000    |
+VARNP(dynlights, usedynlights, 0, 1, 1);
+| grassanimmillis          | Read-only integer  | 0   | 3000    | 60000   |
+| grassscale               | Read-only integer  | 1   | 2       | 64      |
+| relativemouse            | Integer            | 1   | 1       | 0       |
+| relativemouse            | Persistent integer | 0   | 1       | 1       |
+| fullscreen               | Persistent integer | 0   | 1       | 1       |
+| confilter                | Persistent hex integer | 0   | 0xFFC4C0 | 0xFFFFFF |
+| fullconfilter            | Persistent hex integer | 0   | 0xFFFFFF | 0xFFFFFF |
+| miniconfilter            | Persistent hex integer | 0   | 0        | 0xFFFFFF |
 
 </details>
 
 <details>
   <summary>Game</summary>
-  
+
 | Variable            | Type               | Min | Default | Max               | Description |
 | --------------------|--------------------|-----|---------|-------------------|-------------|
 | aidebug             | Integer            | 0   | 0       | 6                 |
 | aiforcegun          | Integer            | -1  | -1      | Max weapons       | Forces the bots to use the specified weapon (offline mode only).
 | allycrosshair       | Persistent Integer | 0   | 1       | 1                 | Controls whether the ally crosshair appears while the player is aiming at an ally.
 | animoverride        | Integer            |-1   | 0       | Max animations    | Imposes the specified animation on all animated entities.
-| autoauth            | Persistent integer | 0   | 1       | 1                 | 
+| autoauth            | Persistent integer | 0   | 1       | 1                 |
 | autoswitch          | Persistent integer | 0   | 1       | 1                 | Whether we automatically switch to a newly acquired weapon that was not previously in our arsenal.
 | blood               | Persistent integer | 0   | 1       | 1                 | Enables or disables blood particles.
 | chatsound           | Persistent integer | 0   | 1       | 1                 | Enables or disables the chat beep sound.
@@ -298,13 +326,13 @@
 | specmode            | Integer            | 0   | 0       | 2                 | Controls which spectator mode is enabled (free roam, following in first person or third person).
 | swayrollfactor      | Floating point     | 1   | 3       | 30                | Multiplies the camera roll by the specified amount and applies it to the first-person weapon and arms.
 | swayside            | Floating point     | 0   | 0.06f   | 1                 | Determines the amount of side sway for the first-person weapon.
-| swaystep            | Floating point     | 1   | 39.2f   | 1                 | 
+| swaystep            | Floating point     | 1   | 39.2f   | 1                 |
 | swayup              | Floating point     | -1  | 0.11f   | 1                 | Controls the amount of vertical sway that affects our first-person avatar.
 | teamcolortext       | Persistent integer | 0   | 1       | 1                 | Controls whether console messages use team colors for player names or not.
 | teleteam            | Integer            | 0   | 1       | 1                 | Whether or not to disable teleports in team modes.
 | testanims           | Integer            | 0   | 0       | 1                 | If set to 1, this variables operates similarly to "/thirdperson 2", but the yaw of our player is locally unchanged to facilitate animation testing.
 | testpitch           | Integer            | -90 | 0       | 90                | Sets player model pitch to the specified number.
-  
+
 </details>
 
 <details>
@@ -530,8 +558,8 @@
 
 <details>
   <summary>Engine</summary>
-  
-| Name              | Description                                                                                              
+
+| Name              | Description
 | ------------------|----------------------------------------------------------------------------------------------------|
 | resetgl           | Triggers when we apply settings changes and we need to reset OpenGL.                               |
 | resetshaders      | Triggers when we apply settings changes and we need to reset the shaders.                          |
@@ -541,8 +569,8 @@
 
 <details>
   <summary>Game</summary>
-  
-| Name              | Description                                                                                              
+
+| Name              | Description
 | ------------------|----------------------------------------------------------------------------------------------------|
 | on_connect        | Triggers every time our client successfully connects to a server, being it local or not.           |
 | on_death          | Triggers each time our client dies.                                                                |
