@@ -1,4 +1,4 @@
-## Variables
+## Console Variables
 
 <details>
   <summary>Engine</summary>
@@ -373,7 +373,7 @@ VARNP(dynlights, usedynlights, 0, 1, 1);
 
 </details>
 
-## Commands
+## Console Commands
 
 <details>
   <summary>Engine</summary>
@@ -584,5 +584,46 @@ VARNP(dynlights, usedynlights, 0, 1, 1);
 | on_spawn          | Triggers when our client spawns.                                                                   |
 | on_suicide        | Triggers each time we kill our own player.                                                         |
 | on_teamkill       | Triggers each time we kill an ally.                                                                |
+
+</details>
+
+## In-Line Texture Commands
+
+In-line texture commands are enclosed in `< >` and are used within texture paths to manipulate images or modify their behavior and parameters.   
+```
+// For example
+objskin * "<mad:1/0/0,1/0/0>skin.png"
+```
+Note that when using in-line texture commands, each texture variant defined by the commands is allocated in memory.
+
+<details>
+  <summary>Commands</summary>
+
+| Command           | Arguments                       | Description
+| ------------------|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| mad               | 2 (multiply[r/g/b], add[r/g/b])  | Applies a multiply/add operation to an image's color channels.
+| intmul            | 1 (color)                        | Integer-based version of the command `mad`.
+| colorify          | 2 (color[r/g/b], weight[r/g/b])  | Adjusts the color channels of a texture based on a specified `color` and `weight` vectors.
+| colormask         | 2 (color1[r/g/b], color2[r/g/b]) | Blends two colors (`color1` and `color2`) based on the alpha channel of each pixel in the image.
+| normal            | 1 (emphasis)                     | Generates a normal map with specified `emphasis`.
+| dup               | 2                                | Duplicates the color value from one channel to another within an image.
+| offset            | 2 (x, y)                         | Offsets the image by `x` and `y` parameters.
+| rotate            | 1 (rotation)                     | Rotates texture by 90 * `rotation` degrees when 0 - 3. 4 - 7 will flip the texture.
+| reorient          | 3 (flipx, flipy, swap)         | Reorients an image. Flips the X axis when `flip x` is 1, flips the Y axis when `flip y` is 1. Swaps the X and Y axes of the texture when `swap` is 1.
+| crop              | 4 (x, y, w, h)                   | Crops an image.
+| mix               | 4                                | Mixes the channels of an image.
+| grey              | 0                                | Converts image to grayscale.
+| blur              | 2 (emphasis, repeat)             | Blurs image by specified `emphasis`, iterating through `repeat`.
+| fade              | 1 (opacity)                      | Multiplies the alpha channel of the texture by `opacity`.
+| premul            | 0                                | Applies premultiplied alpha.
+| agrad             | 4 (left, bottom, right, top)     | Adjusts the alpha gradient of a texture with each argument, ranging from 0 to 1, representing the percentage by which the gradient from each side expands toward the opposite.
+| blend             | 2 (path/to/source, path/to/mask) | Blends two textures together. Uses an optional mask texture.
+| thumbnail         | 2 (w, h)                         | Scales the image as a thumbnail by `w` and `h`.
+| dds               | 1 (scale)                        | Compresses the image by generating a DDS file.
+| compress          | 1 (scale)                        | Compresses the image by generating a DDS file.
+| nocompress        | 0                                |
+| animation         | 5 (ms, w, h, throb, skip)        | Enables spritesheet animation for a texture. `ms` is the delay (in milliseconds) between each frame. `w` is the number of horizontal frames in the spritesheet, while `h` the number of vertical frames in the spritesheet. If `throb` is set to 1, the animation plays forward and then reverses. `skip` specifies the number of frames to skip, from the start when positive or from the end when negative.
+| mirror            | 0                                | Mirrors the texture.
+| noswizzle         | 0                                |
 
 </details>
